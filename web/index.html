@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>User management BP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.6/moment-timezone-with-data.min.js"></script>
+        <script src='./script.js'></script>
+    </head>
+    <body>
+        <div class="container bootstrap snippet">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="adduser">
+
+                        <button id="create-user">Create new user</button>
+                    </div> 
+                    <div class="main-box no-header clearfix">
+                        <div class="main-box-body clearfix">
+                            <div class="table-responsive">
+
+
+                                <div id="accordion">
+                                    <!-- DATA WILL BE LOADED HERE -->
+                                </div>
+
+                                <div id="dialog-form" title="Create new user">
+                                    <p class="validateTips">All form fields are required.</p>
+
+                                    <form>
+                                        <fieldset>
+                                            <label for="name">First Name</label>
+                                            <input type="text" name="firstName" id="firstname" placeholder="Jane">
+                                            <label for="name">Last Name</label>
+                                            <input type="text" name="lastName" id="lastname" placeholder="Smith">
+                                            <label for="email">Email</label>
+                                            <input type="text" name="email" id="email" placeholder="jane@smith.com"> 
+                                            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
